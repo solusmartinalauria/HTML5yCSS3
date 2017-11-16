@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
+    <script src="src/bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <title>Martina Lauria</title>
+    <!--icona pagina-->
+    <link rel="shortcut icon" href="src/img/icon.ico">
+   
+</head>
+
+<body>
+
+    <!--navigazione-->
+<nav class="navbar">
+    <ul class="navbar-list">
+        <li class="navbar-item active none">
+            <a href="index.html#">HOME</a>
+        </li>
+        <li class="navbar-item none">
+            <a href="index.html#about">ABOUT</a>
+        </li>
+        <li class="navbar-item none">
+            <a href="index.html#gallery">GALLERY</a>
+		</li>
+		<li class="navbar-item none">
+				<a href="index.html#video">VIDEO</a>
+		</li>
+        <li class="navbar-item none">
+            <a href="index.html#skills">SKILLS</a>
+        </li>
+        <li class="navbar-item none">
+            <a href="contact.html">CONTACTO</a>
+        </li>
+    </ul>
+</nav>	
+    
+<!--googlemaps--> 
+<section class="maps">
+        <div class="col-md-6">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177285.03823083857!2d8.851580438555157!3d46.029577860473346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842df76a4211f1%3A0xef8c04212ea1f8e0!2sLugano%2C+Svizzera!5e0!3m2!1sit!2ses!4v1510837723101" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+</section>
+
+
+
+<!--menu-->
+
+<main class="container">
+        <section class="contact section-container">
+                <div class="col-md-6">
+            <h2>Contact Me</h2>
+            <div class="row">
+                <div class="form" >
+                        <form name="contacto" method="get" novalidate>
+                            <div class="form-row">
+                                <!--nome e cognome-->
+                                <label for="nombre">Name:</label>
+                                <input type="text" id="nombre" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-row">
+                                <!--email-->
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="name@company.com" 
+                                pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                                
+                            </div>
+                            <div class="form-row">
+                                <!--opciones - radio-->
+                                <div>KIND OF SERVICE</div>
+                                <label for="tipo_mision_1">Graphics</label>
+                                <input type="radio" id="tipo_mision_1" name="tipo_mision" value="Rescate" required>
+
+                                <label for="tipo_mision_2">Photography</label>
+                                <input type="radio" id="tipo_mision_2" name="tipo_mision" value="Ajuste de cuentas" required>
+
+                                <label for="tipo_mision_3">Videos</label>
+                                <input type="radio" id="tipo_mision_3" name="tipo_mision" value="Disparos y explosivos" required>
+                            </div>
+                            <div class="form-row">
+                                <!--numero-->
+                                <label for="ejercito">Number of prints for graphics or photos:</label>
+                                <input type="number" id="ejercito" name="ejercito" min="1" required>
+                            </div>
+                            <div class="form-row">
+                                    <!--data-->
+                                    <label for="fecha">Delivery day:</label>
+                                    <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-row">
+                                <!--bottone-->
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+        
+
+</body>
+
+<footer class="footer">
+        <!--Información final-->
+         Martina Lauria - solus &copy 2017 bbaa - 
+         <div class="email">
+                <a href="mailto:indirizzo@email.com">martina.lauria@student.supsi.ch</a>
+                </div>
+                </div>
+    </footer>
+    
+</html>
